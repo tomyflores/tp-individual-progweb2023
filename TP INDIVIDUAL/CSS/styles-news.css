@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(61, 52, 118);
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    background-color: rgb(56, 48, 108);
+    padding: 0;
+}
+
+.logo{
+    padding-top: 20px;
+    width: 118px;
+    height: 110px;
+    background-color: rgb(56, 48, 108);
+}
+
+.container{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(56, 48, 108);
+}
+
+.maintxt{
+    text-transform: uppercase;
+    font-size: 65px;
+    cursor: default;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    background-image: linear-gradient(to left, rgb(130, 112, 248), rgb(100, 86, 191), rgb(71, 61, 139), rgb(51, 44, 100));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    animation: move 30s linear infinite;
+}
+
+@keyframes move{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.maintxt:hover{
+    text-shadow:0 0 10px rgba(255, 0, 0, 0,5),
+                0 0 20px rgba(255, 0, 0, 0,5),
+                0 0 40px rgba(255, 0, 0, 0,5),
+                0 0 80px rgba(255, 0, 0, 0,5),
+                0 0 160px rgba(255, 0, 0, 0,5),
+                0 0 320px rgba(255, 0, 0, 0,5),
+}
+
+.slider{
+    width: 500px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+    align-self: center;
+    background-color: rgb(178, 161, 136);
+    align-items: center;
+}
+
+
+.slider img{
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+    background-color: rgb(178, 161, 136);
+    align-items: center;
+}
+
+.footer{
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    color:  rgb(255, 153, 0);
+    background-color: rgb(52, 44, 101);
+}
+
+footer{
+    padding: 15px;
+}
+
+.menu, .year{
+    font-size: 18px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 25px;
+    background-color: rgba(88, 75, 171, 0.748);
+    -webkit-text-stroke: black 0.8px;
+}
+
+p{
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.new-shoe-name{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+main{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.slidergeneral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
